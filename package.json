@@ -1,20 +1,26 @@
 {
-  "name": "inversify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:klogic/inversify-playground.git",
-  "author": "narongsak keawmanee <klogic@hotmail.co.th>",
-  "license": "MIT",
-  "scripts": {
-    "eslint": "eslint ."
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
-    "@typescript-eslint/parser": "^5.31.0",
-    "eslint": "^8.20.0",
-    "eslint-config-prettier": "^8.5.0",
-    "inversify": "^6.0.1",
-    "reflect-metadata": "^0.1.13",
-    "typescript": "^4.7.4"
-  }
+    "name": "inversify",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:klogic/inversify-playground.git",
+    "author": "narongsak keawmanee <klogic@hotmail.co.th>",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint .",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": "eslint ."
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.31.0",
+        "@typescript-eslint/parser": "^5.31.0",
+        "eslint": "^8.20.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.1",
+        "inversify": "^6.0.1",
+        "lint-staged": "^13.0.3",
+        "reflect-metadata": "^0.1.13",
+        "typescript": "^4.7.4"
+    }
 }
